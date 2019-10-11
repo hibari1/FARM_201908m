@@ -25,6 +25,7 @@ setup(
     url="https://gitlab.com/deepset-ai/ml/lm/farm",
     download_url="https://github.com/deepset-ai/FARM/archive/0.2.0.tar.gz",
     packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
+    py_modules=['farm'],
     install_requires=parsed_requirements,
     python_requires=">=3.5.0",
     tests_require=["pytest"],
@@ -35,3 +36,5 @@ setup(
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ],
 )
+
+print (setup)
